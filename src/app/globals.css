@@ -2,20 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  * {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-background text-text-primary;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #fafafa;
+    --muted: #eeeeee;
+    --primary: #feba1b;
+    --text-primary: #212121;
+    --text-secondary: #616161;
+    --destructive: #ef4343;
+    --destructive-foreground: #f7f7f7;
+    --input: #fafafa;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: #181a20;
+    --foreground: #1f222a;
+    --muted: #35383f;
+    --primary: #feba1b;
+    --text-primary: #ffffff;
+    --text-secondary: #eeeeee;
+    --destructive: #ef4343;
+    --destructive-foreground: #f7f7f7;
+    --input: #1f222a;
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading;
+}
+
+h1 {
+  @apply text-2xl lg:text-3xl  font-bold;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  border-radius: 3px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+  -webkit-text-fill-color: #000;
+}
+
+@keyframes bounce-loading {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
