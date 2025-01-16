@@ -134,6 +134,7 @@ export default function AuthPage() {
       </div>
       <Button
         type="submit"
+        onClick={handleSubmit(onSubmit)}
         className="w-full bg-primary"
       >
         Confirmar
