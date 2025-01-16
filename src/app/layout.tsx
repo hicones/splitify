@@ -27,7 +27,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sora.variable} antialiased transition-all duration-300`}
       >
-        <main className="flex size-full flex-col">{children}</main>
+        <main className="flex w-full flex-col min-h-screen items-center">
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -37,7 +37,7 @@ export default function ConfirmCodePage() {
   };
 
   return (
-    <section className="flex flex-col justify-between h-screen gap-4 p-4 w-full items-center">
+    <section className="flex flex-1 flex-col justify-between size-full gap-4 p-4 items-center">
       <div />
       <div className="flex flex-col gap-4 max-w-96">
         <h1>Código OTP 🔐</h1>

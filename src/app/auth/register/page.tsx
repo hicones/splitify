@@ -81,7 +81,7 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="flex flex-col gap-4 items-center w-full h-full justify-center animate-fade-in">
+    <div className="flex flex-1 flex-col gap-4 items-center w-full h-full justify-center animate-fade-in">
       <section className="flex flex-col gap-4 p-4 rounded-lg max-w-96 w-full">
         <h1>Criar conta 👩‍💻</h1>
 

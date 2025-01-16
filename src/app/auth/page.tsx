@@ -49,7 +49,7 @@ export default function AuthPage() {
   };
 
   return (
-    <section className="flex flex-col h-full justify-between gap-4 p-4 max-w-96 w-full animate-fade-in">
+    <section className="flex flex-1 flex-col h-full justify-between gap-4 p-4 max-w-96 w-full animate-fade-in">
       <div />
       <div className="flex flex-col gap-4">
         <h1>Bem vindo(a) 👋</h1>
@@ -102,8 +102,11 @@ export default function AuthPage() {
 
             <span className="flex justify-between items-center">
               <div className="flex items-center justify-center">
-                <Checkbox />
-                <label className="text-xs text-text-secondary ml-2">
+                <Checkbox id="remember" />
+                <label
+                  htmlFor="remember"
+                  className="text-xs text-text-secondary ml-2"
+                >
                   Lembrar-me
                 </label>
               </div>

@@ -54,7 +54,7 @@ export default function NewPasswordPage() {
   };
 
   return (
-    <section className="flex flex-col justify-between h-full gap-4 p-4 max-w-96 w-full animate-fade-in">
+    <section className="flex flex-1 flex-col justify-between h-full gap-4 p-4 max-w-96 w-full animate-fade-in">
       <div />
       <div className="flex flex-col gap-4">
         <h1>Criar nova senha 🔒</h1>

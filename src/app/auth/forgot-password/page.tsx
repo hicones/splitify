@@ -39,7 +39,7 @@ export default function ForgotPasswordPage() {
   };
 
   return (
-    <section className="flex flex-col gap-4 p-4 h-full justify-between max-w-96 w-full animate-fade-in">
+    <section className="flex flex-1 flex-col gap-4 p-4 h-full justify-between max-w-96 w-full animate-fade-in">
       <div />
       <div className="flex flex-col gap-4">
         <h1>Redefina sua senha 🔑</h1>
