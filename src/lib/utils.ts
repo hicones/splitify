@@ -24,3 +24,15 @@ export function formatPhone(msisdn: string): string | null {
 
   return msisdn;
 }
+
+export const formatIntCurrency = (value: number | string) => {
+  // const newValue = +value / 100;
+  const newValue = +value;
+
+  if (isNaN(newValue)) return "ERROR";
+
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(newValue);
+};
