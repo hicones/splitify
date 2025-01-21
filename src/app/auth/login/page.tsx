@@ -49,7 +49,7 @@ export default function LoginPage() {
   };
 
   return (
-    <section className="flex flex-grow-0 lg:flex-grow flex-col h-full justify-between gap-4 p-4 max-w-96 w-full animate-fade-in">
+    <section className="flex flex-grow flex-col h-full justify-between gap-4 p-4 max-w-96 w-full animate-fade-in">
       <div />
       <div className="flex flex-col gap-4">
         <h1>Bem vindo(a) 👋</h1>

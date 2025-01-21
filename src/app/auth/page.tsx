@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function AuthPage() {
   return (
-    <section className="flex flex-grow-0 lg:flex-grow flex-col h-full justify-center gap-6 p-4 max-w-96 w-full animate-fade-in">
+    <section className="flex flex-grow flex-col h-full justify-center gap-6 p-4 max-w-96 w-full animate-fade-in">
       <Image
         src="/logo.svg"
         width={80}

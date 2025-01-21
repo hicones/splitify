@@ -13,7 +13,7 @@ export const Header = () => {
 
       <h2 className="font-semibold text-lg text-text-primary">Splitify</h2>
 
-      <IoNotificationsOutline className="size-6 text-text-primary cursor-pointer hover:scale-105 transition-all" />
+      <IoNotificationsOutline className="size-6 text-text-primary cursor-pointer hover:scale-105 transition-all hover:rotate-12" />
     </nav>
   );
 };
