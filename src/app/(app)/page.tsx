@@ -10,7 +10,7 @@ import { BottomNavigation } from "@/components/app/bottom-navigation";
 export default function Home() {
   return (
     <div className="flex flex-grow flex-col gap-4 w-full lg:max-w-md">
-      <header className="flex flex-col w-full bg-primary px-4 pt-12 pb-6 gap-6">
+      <header className="flex flex-col w-full bg-primary px-4 py-8 gap-6">
         <Header />
         <div className="flex flex-col items-center justify-center text-center mt-4">
           <h1 className="font-semibold">{formatIntCurrency(40)}</h1>

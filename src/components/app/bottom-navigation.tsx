@@ -14,7 +14,7 @@ export const BottomNavigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center justify-around w-full p-4 mt-auto">
+    <nav className="flex items-center justify-around w-full p-4 mt-auto fixed bott">
       {bottomNavigationLinks.map((link) => (
         <Link
           key={link.href}
