@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,7 +16,7 @@ export const BottomNavigation = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center justify-around w-full p-4 mt-auto absolute bottom-0">
+    <nav className="flex items-center justify-around w-full lg:max-w-md p-4 mt-auto fixed bottom-0">
       {bottomNavigationLinks.map((link) => (
         <Link
           key={link.href}

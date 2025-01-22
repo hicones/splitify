@@ -5,11 +5,10 @@ import { Navigation } from "./components/navigation";
 import Link from "next/link";
 import { TbChevronRight } from "react-icons/tb";
 import { ResumeTransactions } from "./components/resume-transactions";
-import { BottomNavigation } from "@/components/app/bottom-navigation";
 
 export default function Home() {
   return (
-    <div className="flex flex-grow flex-col gap-4 w-full lg:max-w-md">
+    <div className="flex flex-grow flex-col gap-4 w-full lg:max-w-md pb-10">
       <header className="flex flex-col w-full bg-primary px-4 py-8 gap-6">
         <Header />
         <div className="flex flex-col items-center justify-center text-center mt-4">
@@ -32,7 +31,6 @@ export default function Home() {
         </div>
         <ResumeTransactions />
       </div>
-      <BottomNavigation />
     </div>
   );
 }
