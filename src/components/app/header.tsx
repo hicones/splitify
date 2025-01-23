@@ -5,7 +5,7 @@ export const Header = () => {
   const hasNotification = true;
 
   return (
-    <nav className="w-full flex items-center justify-between gap-4">
+    <nav className="w-full flex items-center justify-between gap-4 animate-fade">
       <Image
         src="/logo-contrast.svg"
         alt="logo"

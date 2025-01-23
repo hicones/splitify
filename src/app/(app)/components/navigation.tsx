@@ -17,7 +17,7 @@ const navigationItems = [
 
 export const Navigation = () => {
   return (
-    <div className="flex w-full items-center justify-center px-2">
+    <div className="flex w-full items-center justify-center px-2 animate-fade-in">
       <ul className="flex gap-6 items-center text-text-primary w-full justify-center">
         {navigationItems.map((item, index) => (
           <li
