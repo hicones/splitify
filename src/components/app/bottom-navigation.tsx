@@ -8,7 +8,7 @@ import { TbHome, TbUsersGroup, TbUsers, TbUser } from "react-icons/tb";
 const bottomNavigationLinks = [
   { label: "Home", icon: TbHome, href: "/" },
   { label: "Grupos", icon: TbUsersGroup, href: "/groups" },
-  { label: "Contatos", icon: TbUsers, href: "/contact" },
+  { label: "Contatos", icon: TbUsers, href: "/contacts" },
   { label: "Conta", icon: TbUser, href: "/account" },
 ];
 
