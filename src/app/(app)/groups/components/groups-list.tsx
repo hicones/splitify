@@ -29,7 +29,7 @@ export const GroupsList = () => {
         </div>
       )}
 
-      <Button className="w-fit absolute bottom-10 right-6">
+      <Button className="w-fit absolute bottom-10 right-6 hover:-rotate-180">
         <TbPlus className="size-6" />
       </Button>
     </div>
